@@ -93,7 +93,7 @@ export default function BetterNavbar() {
               >
                 <HStack>
                   <InfoIcon />
-                  <Text fontWeight="bold">About</Text>
+                  <Text fontWeight="bold">About us</Text>
                 </HStack>
               </ReachLink>
             </Stack>
