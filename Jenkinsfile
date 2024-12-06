@@ -2,8 +2,9 @@ pipeline {
     agent any
 
     environment {
-        AWS_ACCESS_KEY_ID = credentials('AWS_ACCESS_KEY_ID') // AWS Access Key stored in Jenkins credentials
-        AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY') // AWS Secret Key stored in Jenkins credentials
+        AWS_CREDENTIALS = credentials('AWS_CREDENTIALS')
+     // AWS_ACCESS_KEY_ID = credentials('AWS_ACCESS_KEY_ID') // AWS Access Key stored in Jenkins credentials
+     // AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY') // AWS Secret Key stored in Jenkins credentials
         AWS_REGION = 'us-east-1'  // AWS region
         S3_BUCKET = '05dec-quizapp'  // S3 bucket name
         CLOUDFRONT_DISTRIBUTION_ID = 'E30EVQWLNQK4AF'  // CloudFront distribution ID
