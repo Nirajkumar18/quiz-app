@@ -20,10 +20,12 @@ pipeline {
         stage('Install Dependencies and Build') {
             steps {
                 script {
-                    sh '''
-                    npm install
-                    npm run build
-                    '''
+                    nodejs('NodeJS 18') {
+                        sh '''
+                            npm install
+                            npm run build
+                        '''
+                    }
                 }
             }
         }
