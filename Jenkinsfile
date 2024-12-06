@@ -24,7 +24,6 @@ pipeline {
                     npm install
                     npm run build
                     '''
-                    }
                 }
             }
         }
